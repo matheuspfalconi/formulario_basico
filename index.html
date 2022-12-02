@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+
+		<!-- Faz com que o navegador aceite caracteres especiais utf-8 -->
+		<meta charset="utf-8">
+
+		<!-- Título da página -->
+		<title>Formulário Básico</title>
+
+		<!-- Fazendo a chamada do arquivo de estilo -->
+		<link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+	</head>
+	<body>
+		<div class="container">
+			<!-- Navegação da Página, no caso somente o título -->
+			<nav class="div_title_page">
+				<h1 class="title_page">Formuário Básico</h1>
+			</nav>
+
+			<!-- Conteúdo da página -->
+			<main class="div_form_page">
+				<!-- Início formulário -->
+				<form class="form_page">
+					<!-- Campo nome -->
+					<div class="field_form field_line">
+						<p for="nomeUser" class="title_field">Nome: </p>
+						<input type="text" name="nomeUser" id="nomeUser" placeholder="José Santos" class="input_field" required>
+					</div>
+
+					<!-- Campo email -->
+					<div class="field_form field_line">
+						<p for="emailUser" class="title_field">Email: </p>
+						<input type="email" name="emailUser" id="emailUser" placeholder="josesantos@hotmail.com" class="input_field" required>
+					</div>
+
+					<!-- Campo CPF -->
+					<div class="field_form field_line">
+						<p for="cpfUser" class="title_field">CPF: </p>
+						<input type="text" name="cpfUser" id="cpfUser" placeholder="123.321.123.31" class="input_field" required>
+					</div>
+
+					<div class="div_field_half">
+						<!-- Campo Nascimento -->
+						<div class="field_form field_half">
+							<p for="nascUser" class="title_field">Data Nascimento: </p>
+							<input type="date" name="nascUser" id="nascUser" required>
+						</div>
+
+						<!-- Campo Sexo -->
+						<div class="field_form field_half">
+							<p for="sexoUser" class="title_field">Sexo: </p>
+
+							<select name="sexoUser" id="sexoUser">
+							  <option value="M">Masculino</option>
+							  <option value="F">Feminino</option>
+							  <option value="NI" selected>Não Informado</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- Campo Habilidades -->
+					<div class="field_form" id="field_habilidades">
+						<p for="nascUser" class="title_field">Suas Habilidades: </p>
+						<div><input type="checkbox" name="habUser" class="option_checkbox" value="HTML"><label class="label_checkbox">HTML</label></div>
+						<div><input type="checkbox" name="habUser" class="option_checkbox" value="CSS"><label class="label_checkbox">CSS</label></div>
+						<div><input type="checkbox" name="habUser" class="option_checkbox" value="JavaScript"><label class="label_checkbox">JavaScript</label></div>
+					</div>
+						
+					<!-- Botao -->
+					<div class="div_button">
+						<button type="submit" name="submitForm" id="submit" onsubmit="">Enviar</button>
+					</div>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
